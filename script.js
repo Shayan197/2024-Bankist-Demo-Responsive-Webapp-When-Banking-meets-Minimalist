@@ -11,9 +11,6 @@ const section2img = document.getElementById("section-2-img");
 const section2Span = document.getElementById("section-2-span");
 
 //section # 3
-const slide1 = document.getElementById("slide-1");
-const slide2 = document.getElementById("slide-2");
-const slide3 = document.getElementById("slide-3");
 
 const btnForward = document.getElementById('btnForward');
 const btnBackward = document.getElementById("btnBackward");

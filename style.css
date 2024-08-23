@@ -25,6 +25,7 @@ html {
 }
 body {
   background-color: #f3f3f3;
+  overflow-x: hidden;
 }
 header {
   height: 100vh;
@@ -279,6 +280,10 @@ footer {
 #section-3 .slider .btn-slide button{
   position: absolute;
 }
+#section-3 .slider{
+  display: flex;
+  justify-content: space-around;
+}
 #section-3 .slider .slide {
   display: flex;
   overflow: hidden;
@@ -415,9 +420,4 @@ footer .lower-footer p a{
   font-size: .9rem;
   font-weight: 400;
   letter-spacing: .5px;
-}
-#section-3 .slider{
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
 }
