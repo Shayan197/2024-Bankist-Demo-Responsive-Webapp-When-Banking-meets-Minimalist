@@ -27,11 +27,11 @@ body {
   background-color: #f3f3f3;
 }
 header {
-  padding: 0 2rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 2rem;
 }
 header nav {
   display: flex;
@@ -126,15 +126,14 @@ button {
 main {
   padding: 0 2rem;
 }
-main .section {
+main > .section,
+footer {
   display: block;
   flex-direction: column;
   border-top: 1px solid #ddd;
   min-height: 100vh;
   padding: 9.55rem 3rem;
-  border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
-  /* background-color: #222222; */
 }
 #section-1 .upper-cont,
 #section-2 .upper-cont,
@@ -238,6 +237,7 @@ main .section {
   font-size: 1rem;
   padding: 0.8rem 2.7rem;
   font-weight: 500;
+  cursor: pointer;
 }
 #section-2 .operation-cont span {
   background-color: var(--color-secondary-opacity);
@@ -256,7 +256,9 @@ main .section {
   font-size: 1rem;
 }
 #transfer {
+  position: relative;
   background-color: var(--color-secondary);
+  bottom:.5rem;
 }
 #closing {
   background-color: var(--color-tertiary);
@@ -274,7 +276,13 @@ main .section {
   align-items: center;
   cursor: pointer;
 }
+#section-3 .slider .btn-slide button{
+  position: absolute;
+}
 #section-3 .slider .slide {
+  display: flex;
+  overflow: hidden;
+  transition: all 1s ease;
   width: 100%;
   padding: 1.9rem 0;
   overflow: hidden;
@@ -299,9 +307,6 @@ main .section {
 #section-3 .slider .slide .extra-div .headAndPara span::after {
   right: 30px;
 }
-#section-3 .slider .slide {
-  display: flex;
-}
 #section-3 .slider .slide .extra-div {
   width: 40.5rem;
   margin: auto;
@@ -321,9 +326,9 @@ main .section {
 }
 #section-3 .slider .slide .extra-div .user-content p {
   margin-bottom: 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-#section-3 .slider .slide .extra-div .user-content{
+#section-3 .slider .slide .extra-div .user-content {
   display: flex;
   padding: 0 3.2rem;
 }
@@ -334,23 +339,85 @@ main .section {
   width: 4.1rem;
   overflow: hidden;
 }
-#section-3 .slider .slide .extra-div .user-content div{
+#section-3 .slider .slide .extra-div .user-content div {
   margin-top: 8px;
 }
- #section-3 .slider .dots{
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+#section-3 .slider .dots {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#section-3 .slider .dots button{
-  margin: 0;
-  border-radius: 0;
-  padding: 5px;
-  background-color: #44444454;
+#section-3 .slider .dots button {  
+  padding: 3px;
+  margin: 0 7px;
   border-radius: 50%;
   cursor: pointer;
+  background-color: #44444454;
 }
-footer{
-  height: 98vh;
+/* ######################## FOOTER */
+footer {
+  padding: 0;
   background-color: #37383d;
+  min-height: 97vh;
+  border-top: 0;
+}
+footer .upper-footer {
+  padding: 6.3rem 3rem;
+  text-align: center;
+}
+footer .upper-footer {
+  border-bottom: 1px solid #dddddd13;
+}
+footer .upper-footer .new{
+  width: 50rem;
+  margin: auto;
+}
+footer .upper-footer h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 3.25rem;
+  padding-bottom: 3.8rem;
+}
+footer .upper-footer button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.25rem 3rem;
+  font-family: "poppins";
+}
+footer .lower-footer{
+  padding: 6.3rem 0 0 0;
+  text-align: center;
+}
+footer .lower-footer .footer-nav{
+  margin-bottom: 3.45rem;
+  display: flex;
+  justify-content: center;
+}
+footer .lower-footer .footer-nav a{
+  color: #ffffffcf;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+}
+footer .lower-footer img{
+  width: 3.1rem;
+  margin-bottom: 2.9rem;
+}
+footer .lower-footer p{
+  color: #ffffff90;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: center;
+}
+footer .lower-footer p a{
+  color: #ffffffc2;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+#section-3 .slider{
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
 }

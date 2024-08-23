@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- https://bankist-dom.netlify.app/# -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
@@ -93,8 +94,12 @@
           <h3>Everything as simple as possible, but no simpler.</h3>
         </div>
         <div class="operation-cont">
-          <span>
-            <img src="./images/user-xmark-alt-1-svgrepo-com.svg" alt="" />
+          <span id="section-2-span">
+            <img
+              id="section-2-img"
+              src="./images/credit-card-svgrepo-com.svg"
+              alt=""
+            />
           </span>
           <div class="headAndPara">
             <div class="buttons">
@@ -102,8 +107,10 @@
               <button id="loan">02 Instant Loans</button>
               <button id="closing">03 Instant Closings</button>
             </div>
-            <h5>Tranfser money to anyone, instantly! No fees, no BS.</h5>
-            <p>
+            <h5 id="section2h5">
+              Tranfser money to anyone, instantly! No fees, no BS.
+            </h5>
+            <p id="section2p">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum. Ut enim ad minim
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -118,8 +125,8 @@
           <h3>Millions of Bankists are already making their lifes simpler.</h3>
         </div>
         <div class="slider">
-          <div class="slide slide-1">
-            <button class="btn-slide" id="btnForward">←</button>
+          <button class="btn-slide" id="btnBackward">←</button>
+          <div class="slide" id="slide-1">
             <div class="extra-div">
               <div class="headAndPara">
                 <span>1</span>
@@ -142,19 +149,95 @@
                   <p>San Francisco, USA</p>
                 </div>
               </div>
-              <div class="buttons"></div>
             </div>
-            <button class="btn-slide" id="btnBackward">→</button>
           </div>
+          <div class="slide" id="slide-2">
+            <div class="extra-div">
+              <div class="headAndPara">
+                <span>1</span>
+                <h5>The last step to becoming a complete minimalist</h5>
+                <p>
+                  Excepteur dolor sit, amet consectetur adipisicing elit.
+                  Accusantium quas quisquam non? Quas voluptate nulla minima
+                  deleniti optio ullam nesciunt, numquam corporis et asperiores
+                  laboriosam sunt, praesentium suscipit blanditiis.
+                  Necessitatibus id alias reiciendis, perferendis facere
+                  pariatur dolore veniam autem esse non provident.
+                </p>
+              </div>
+              <div class="user-content">
+                <span>
+                  <img src="./images/user-2.jpg" alt="user" />
+                </span>
+                <div>
+                  <h5>Aarav Lynn</h5>
+                  <p>San Francisco, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="slide-3">
+            <div class="extra-div">
+              <div class="headAndPara">
+                <span>1</span>
+                <h5>Finally free from old-school banks</h5>
+                <p>
+                  Excepteur dolor sit, amet consectetur adipisicing elit.
+                  Accusantium quas quisquam non? Quas voluptate nulla minima
+                  deleniti optio ullam nesciunt, numquam corporis et asperiores
+                  laboriosam sunt, praesentium suscipit blanditiis.
+                  Necessitatibus id alias reiciendis, perferendis facere
+                  pariatur dolore veniam autem esse non provident.
+                </p>
+              </div>
+              <div class="user-content">
+                <span>
+                  <img src="./images/user-3.jpg" alt="user" />
+                </span>
+                <div>
+                  <h5>Aarav Lynn</h5>
+                  <p>San Francisco, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-slide" id="btnForward">→</button>
           <div class="dots">
-            <button  data-slide="0"></button>
-            <button  data-slide="1"></button>
-            <button  data-slide="2"></button>
+            <button data-slide="0"></button>
+            <button data-slide="1"></button>
+            <button data-slide="2"></button>
           </div>
         </div>
       </sectin>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="upper-footer">
+        <div class="new">
+          <h2>
+            The best day to join Bankist was one year ago. The second best is
+            today!
+          </h2>
+          <button>Open your free account taday!</button>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <div class="footer-nav">
+          <a href="#hero">About</a>
+          <a href="#hero">Pricing</a>
+          <a href="#hero">Terms of Use</a>
+          <a href="#hero">Privacy Policy</a>
+          <a href="#hero">Carrers</a>
+          <a href="#hero">Blog</a>
+          <a href="#hero">Contact Us</a>
+        </div>
+        <div class="footer-img"><img src="./images/icon.png" alt="logo" /></div>
+        <p>
+          © Copyright reserved by <a href="hero">Shayan Bukhari</a>. Use for
+          learning or your portfolio. Don't use to teach. Don't claim as your
+          own product.
+        </p>
+      </div>
+    </footer>
     <script src="/script.js"></script>
   </body>
 </html>
