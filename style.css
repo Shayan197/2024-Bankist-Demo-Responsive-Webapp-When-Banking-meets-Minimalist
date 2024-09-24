@@ -276,6 +276,7 @@ footer {
   display: flex;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
 #section-3 .slider .btn-slide button{
   position: absolute;
@@ -283,6 +284,8 @@ footer {
 #section-3 .slider{
   display: flex;
   justify-content: space-around;
+  margin: auto;
+  width: 50rem;
 }
 #section-3 .slider .slide {
   display: flex;
@@ -347,8 +350,8 @@ footer {
 #section-3 .slider .slide .extra-div .user-content div {
   margin-top: 8px;
 }
-#section-3 .slider .dots {
-  position: absolute;
+/* #section-3 .slider .dots {
+  position: fixed;
   bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
@@ -359,7 +362,7 @@ footer {
   border-radius: 50%;
   cursor: pointer;
   background-color: #44444454;
-}
+} */
 /* ######################## FOOTER */
 footer {
   padding: 0;
